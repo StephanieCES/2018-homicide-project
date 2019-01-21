@@ -1,0 +1,148 @@
+main {
+  padding-top: 100px;
+  margin-bottom: 20px;
+}
+
+* {
+  box-sizing: border-box;
+
+}
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+h1 {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 40px;
+}
+
+h3 {
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+a {
+	color: #0277b2;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+a:hover {
+	color: #2ca4e1;
+	text-decoration: underline;
+}
+nav {
+	background-color: black;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	margin-left: 10px;
+}
+
+nav ul {
+	display: inline-block;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	font-size: 20px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+li a {
+	color: white;
+}
+
+li a:hover {
+	color: #b4b4b4;
+	text-decoration: underline;
+}
+img {
+	height: 100%;
+	width: 100%;
+	border: 1px solid gray;
+	transition: background .25s ease;
+}
+
+.chatter {
+	margin-left: 15px;
+	margin-right: 15px;
+	line-height: 32px;
+	font-size: 18px;
+}
+
+.victim-summary {
+	color: black;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	font-size: 15px;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+#overlay {
+	opacity: 5;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+
+#overlay:hover {
+	opacity: 0.2;
+}
+
+.box {
+  float: left;
+  height: 50%;
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.row {
+  max-width: 1000px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0 auto;
+}
+
+
+/* Clearfix */
+.row::after {
+  clear: both;
+}
+
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.col-3 {
+  float: left;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+  margin-bottom: 20px;
+}
+
+
+/* Mobile defaults */
+.col-3 {
+  width: 100%;
+}
+
+
+/* Non-mobile, grid */
+@media only screen and (min-width: 640px) {
+  /* 3 columns, 3/12 in % */
+  .col-3 {
+    width: 25%;
+  }
