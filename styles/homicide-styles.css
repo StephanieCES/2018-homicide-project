@@ -77,24 +77,31 @@ img {
 
 .victim-summary {
 	color: black;
-	position: relative;
+	opacity: 0;
+	position: absolute;
 	top: 50%;
 	left: 50%;
 	text-align: center;
 	font-size: 15px;
+	font-weight: 600;
+	transition: .25s ease;
 	transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 }
 
-#overlay {
+.col-3:hover .victim-summary {
+	opacity: 1;
+}
+
+.fade {
 	opacity: 5;
 	transition: opacity .25s ease-in-out;
 	-moz-transition: opacity .25s ease-in-out;
 	-webkit-transition: opacity .25s ease-in-out;
 }
 
-#overlay:hover {
+.fade:hover {
 	opacity: 0.2;
 }
 
@@ -128,6 +135,7 @@ img {
 
 .col-3 {
   float: left;
+  position: relative;
   padding-left: 1.04166666%;
   padding-right: 1.04166666%;
   margin-bottom: 20px;
